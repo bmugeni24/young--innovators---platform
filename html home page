@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Innovators Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto 50px;
+            padding: 50px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            animation: slideIn 2s ease-in-out;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .moving-text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 20px;
+            animation: moveText 5s infinite linear;
+        }
+        @keyframes moveText {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Mentorship</a>
+        <a href="#">Competitions</a>
+        <a href="#">Tech Skills</a>
+        <a href="#">I Lead Program</a>
+        <a href="#">About Us</a>
+        <a href="#">How to Apply</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Young Innovators Platform</h1>
+        <p>
+            A place where young minds can collaborate, learn new skills, 
+            and solve real-world challenges through technology, leadership, and innovation.
+        </p>
+        <a href="#" class="btn">Join Now</a>
+        <div class="moving-text">Empowering Young Innovators! 🚀</div>
+    </div>
+</body>
+</html>
