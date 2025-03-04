@@ -3,109 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Young Innovators Platform</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Future African Child Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <style>
+        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
         body {
-            background-color: #f4f4f4;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(45deg, #6e7cfa, #3ec9b7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
         }
-        nav {
-            background: #333;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
         }
-        nav a {
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #4CAF50; /* Changed to green */
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        .container {
-            max-width: 800px;
-            margin: 100px auto 50px;
-            padding: 50px;
-            background: white;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            color: #333;
-            animation: slideIn 2s ease-in-out;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-            margin-top: 10px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
+            font-size: 1.2rem;
+            border: none;
             border-radius: 5px;
-            transition: background 0.3s;
+            cursor: pointer;
+            transition: 0.3s ease;
         }
-        .btn:hover {
-            background: #0056b3;
+
+        .cta-button:hover {
+            background-color: #45a049; /* Darker green for hover effect */
         }
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(-50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .moving-text {
-            font-size: 22px;
-            font-weight: bold;
-            color: #007bff;
+
+        /* Animated Text */
+        .animated-text {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: #4CAF50; /* Green */
             margin-top: 20px;
-            animation: moveText 5s infinite linear;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: moveText 5s linear infinite;
         }
+
         @keyframes moveText {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0% {
+                transform: translateX(100%);
+            }
+            50% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Section: Why Join */
+        .why-join {
+            background-color: #ffffff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .why-join h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .why-join p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .why-join .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Mentorship</a>
-        <a href="#">Competitions</a>
-        <a href="#">Tech Skills</a>
-        <a href="#">I Lead Program</a>
-        <a href="#">About Us</a>
-        <a href="#">How to Apply</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <h1>Welcome to Young Innovators Platform</h1>
-        <p>
-            A place where young minds can collaborate, learn new skills, 
-            and solve real-world challenges through technology, leadership, and innovation.
-        </p>
-        <a href="#" class="btn">Join Now</a>
-        <div class="moving-text">Empowering Young Innovators! 🚀</div>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Future African Child Technology</h1>
+        <p>Empowering young innovators with the tools and mentorship to create a brighter tomorrow through technology.</p>
+        <button class="cta-button">Join Us Now</button>
+        <div class="animated-text">Innovation. Leadership. Change.</div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="why-join">
+        <h2>Why Join Our Platform?</h2>
+        <p>At Future African Child Technology, we believe in the power of young minds to change the world. By joining our platform, you gain access to mentorship, exciting challenges, and resources that will shape your future.</p>
+        <div class="quote">
+            "Technology is the key to solving the world’s most pressing challenges. Together, we can make a difference!"
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Future African Child Technology. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
