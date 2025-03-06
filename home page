@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future African Child Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #006400;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* Animated Text */
+        .animated-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: yellow;
+            animation: moveText 3s infinite alternate;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+
+        /* Call-to-Action Button */
+        .cta-button {
+            background-color: yellow;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: #006400;
+        }
+
+        /* Quote Section */
+        #quote {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+
+        #quote blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #333;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #e0f2f1;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#mentorship">Mentorship</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Welcome to Future African Child Technology</h1>
+        <p>Your platform for mentorship, innovation, and growth.</p>
+        <p class="animated-text">Empowering the innovators of tomorrow.</p>
+        <button class="cta-button" onclick="window.location.href='#mentorship'">Join Us Now</button>
+    </div>
+
+    <!-- Quote Section -->
+    <section id="quote">
+        <blockquote>
+            "Technology is the future, and it's in the hands of young innovators like you to shape the world!"
+        </blockquote>
+        <p>- Future African Child Technology</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Stay connected with us on social media!</p>
+        <div class="social-icons">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourpage" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+            </a>
+            <!-- Email -->
+            <a href="mailto:belysemugeni02@gmail.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p> 2025 Future African Child Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
